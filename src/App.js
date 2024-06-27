@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       
       {/*<Login/>*/}
-     {/* <Link_SignUp/> */}
-     <Linklogin/>
+     <Link_SignUp/>
+     {/* <Linklogin/> */}
      
     </div>
   );
