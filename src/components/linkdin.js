@@ -1,13 +1,24 @@
 import React from "react";
 import { CenterFocusStrong, Padding, margin } from "@mui/icons-material";
-import { TextField, Button, Typography, Link, Box } from '@mui/material';
+import {  TextField,Button, Typography, Link, Box } from '@mui/material';
 import imglogo from '../assets/logo.jpg';
 import imglogo2 from '../assets/onetime.jpg';
+import styles from './linkdin.module.css'
+// import IconButton from '@mui/material/IconButton';
+// import Input from '@mui/material/Input';
+// import FilledInput from '@mui/material/FilledInput';
+// import OutlinedInput from '@mui/material/OutlinedInput';
+// import InputLabel from '@mui/material/InputLabel';
+// import InputAdornment from '@mui/material/InputAdornment';
+// import FormHelperText from '@mui/material/FormHelperText';
+// import FormControl from '@mui/material/FormControl';
+// import TextField from '@mui/material/TextField';
+// import Visibility from '@mui/icons-material/Visibility';
+// import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
-import './login.css'
 
 
-const Linklogin = () => {
+const Link_Login = () => {
 
   return (
     <Box className="login_root">
@@ -21,10 +32,28 @@ const Linklogin = () => {
           <Typography className="login_heading2" >stay updated on your professional world</Typography>
           <TextField className="login_input1" label="Username or email" placeholder="Enter Username or email" fullWidth required />
 
-          <TextField className="login_input2" label="Password" placeholder="Enter Password" type="password" fullWidth required />
-          <Typography>
+           <TextField className="login_input2" label="Password" placeholder="Enter Password" type="password" fullWidth required /> 
+          {/* <FormControl sx={{ m: 1, width: '25ch' }} variant="standard"> 
+          <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+          <Input
+            id="standard-adornment-password"
+            type={showPassword ? 'text' : 'password'}
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleClickShowPassword}
+                  onMouseDown={handleMouseDownPassword}
+                >
+                  {showPassword ? <VisibilityOff /> : <Visibility />}
+                </IconButton>
+              </InputAdornment>
+            }
+            />
+        </FormControl> */}
+          
             <Link className="login_link1" href="#">Forget Password?</Link>
-          </Typography>
+          
 
 
           <Button className="login_button" type="submit"
@@ -71,4 +100,4 @@ const Linklogin = () => {
 
   )
 };
-export default Linklogin;
+export default Link_Login;

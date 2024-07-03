@@ -2,37 +2,30 @@
     background-color: #f3f2f0;
     height: 100vh;
     width: 100vw;
-    padding: 30px 30px !important;
+   box-sizing: inherit !important;
 }
 
 .signup_wraper {
+    box-sizing: border-box;
+    height: auto;
     left: 50% !important;
-    margin-bottom: 20%;
+    max-height: 700px;
+    max-width: 1132px;
     padding: 24px 16px !important;
     position: absolute !important;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%);
     width: 100% !important;
 }
 
 .signup_logoimg {
     display: block;
     height: auto !important;
-    margin: 16px;
+    margin: 0;
     min-height: 30px;
     width: 100%;
 }
 
-.link_img {
-    /* margin: 0px 10px;
-    display: flex; */
-    float: left;
-    /* height: 34px; */
-    margin-left: 0;
-    margin-top: 0;
-    width: 135px;
-}
-
-.footer_text {
+/* .footer_text {
 
     position: fixed;
     left: 0;
@@ -49,15 +42,17 @@
     color: #0a66c2 !important;
     font-weight: 600 !important;
     text-decoration: none !important;
-}
+} */
 
 
 .signup_title {
     color: #000000ec !important;
-    font-size: 30px !important;
-    height: 87px !important;
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    height: 87px;
     justify-content: center !important;
     padding: 24px 16px !important;
+    position: relative !important;
     text-align: center !important;
     width: auto !important;
 
@@ -70,18 +65,34 @@
     margin: 30px auto !important;
     padding: 24px 24px 0;
     width: 400px;
+    box-sizing: inherit;
+    max-width: 352px;
+    max-height: 460px;
 }
 
 .inner_box1 {
     display: inline-flex;
     flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
     margin: 0px;
+    border: 0px;
     vertical-align: top;
 }
 
+
 .textfeild1 {
-    margin-bottom: 30px !important;
-    margin-top: 30px !important;
+    margin-bottom: 16px !important;
+    margin-top: 16px !important;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    vertical-align: top;
 }
 
 .text1 {
@@ -89,7 +100,7 @@
     font-size: 14px !important;
     font-weight: 600 !important;
     text-align: left !important;
-    display: block
+   
 }
 
 .signup_input1 {
@@ -98,10 +109,22 @@
     position: relative;
     min-width: 0px;
     padding: 0px;
+    height: 33px;
     margin: 0px;
     border: 1px solid black;
     border-radius: 4px;
     vertical-align: top;
+}
+.textfeild2{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    vertical-align: top;
+    width:100%;
 }
 
 .text2 {
@@ -110,26 +133,35 @@
     font-weight: 600 !important;
     margin: 16px 0 4px;
     text-align: left !important;
+   
 }
 
 .signup_input2 {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
     height: 33px;
-    padding: 0px 0px 0px 15px;
+    margin: 0px;
+    border: 1px solid black;
+    border-radius: 4px;
+    vertical-align: top;
 }
 
 .signup_link {
-    align-items: center;
-    padding: 9px 0px;
     color: #0009 !important;
     font-size: 12px !important;
     line-height: 16px !important;
-
+    text-align: center !important;
 }
 
 .signup_button {
 
-    border-radius: 50px !important;
-    height: 50px !important;
+     border-radius: 50px !important;
+    height: 40px !important; 
+    margin-top: 16px !important;
+    padding: 20px 0 !important;
 
 }
 
@@ -171,10 +203,11 @@
 
 .bottom_text {
     color: #000000e6 !important;
-    font-weight: 100 !important;
+     font-weight: 100 !important;
     height: 20px;
     justify-content: center !important;
-    padding: 16px 16px 24px !important;
+    padding: 16px 16px 24px !important; 
+   
 }
 
 .bottom_text_link {
@@ -182,3 +215,20 @@
     font-weight: 600 !important;
     text-decoration: none !important;
 }
+.footer_text{
+    font-size: 14px !important;
+    margin-top: 50% !important;
+    text-align: center !important;
+    max-width: 1100px;
+    height: 21px;
+    text-transform: none;
+}
+/* .inputindorment{
+    display: flex;
+    height: 0.01em;
+    max-height: 2em;
+    -webkit-box-align: center;
+    align-items: center;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.54);
+} */
