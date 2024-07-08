@@ -33,7 +33,7 @@ const Link_SignUp = () => {
             <Box className="signup_wraper">
                 <Box className="signup_logoimg">
                     <Logo color="#0A66C2" />
-                    {/* <img className="link_img" src={imglogo} height={"80px"} /> */}
+                     {/* <img className="link_img" src={imglogo} height={"80px"} />  */}
                 </Box>
                 <Box className="signup_title">Make the most of your professional life
                     <Box className="signup_box">
@@ -95,12 +95,12 @@ const Link_SignUp = () => {
 
                         </Box>
                     </Box>
-                </Box>
                 <Box className="signup_footerwrap">
                     <Typography className="footer_text">
                         Looking to create a page for business?
-                        <Link href="#" >Get help</Link>
+                        <Link className="footer_link" >Get help</Link>
                     </Typography>
+                </Box>
                 </Box>
             </Box>
             </Box>
