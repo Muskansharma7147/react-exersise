@@ -5,7 +5,6 @@ import Logo from "../assets/logo";
 import imglogo2 from '../assets/onetime.jpg';
 import styles from './linkdin.module.css';
 import Divider from '@mui/material/Divider';
-import linkedin_logo_footer from '../assets/linkedin_logo_footer.webp';
 // import IconButton from '@mui/material/IconButton';
 // import Input from '@mui/material/Input';
 // import FilledInput from '@mui/material/FilledInput';
@@ -105,16 +104,17 @@ const Link_Login = () => {
           </Button>
 
         </Box>
-      </Box>
+      
       <Box className={styles.login_footer_root}>
         <Typography>New To Linkedin?
           <Link className={styles.footer_link} href="/signup" onClick={()=>{console.log();}}>Join now </Link>
          </Typography>
        
       </Box>
+      </Box>
       <Box className={styles.footer_wrap}>
         <Box classname={styles.footer}>
-        <img src= "C:\Users\Dell\fed\react-exersise\src\assets\linkedin_logo_footer.webp"/>
+        <img src= "/static/media/footer_logo.963c482045211adf0414.png"/>
         </Box>
       </Box>
 

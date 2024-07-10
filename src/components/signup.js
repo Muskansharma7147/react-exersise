@@ -1,6 +1,6 @@
 import React from "react";
 import { CenterFocusStrong, Padding, margin } from "@mui/icons-material";
-import {  Button, Typography, Link, Box, FormLabel, InputBase } from '@mui/material';
+import { Button, Typography, Link, Box, FormLabel, InputBase } from '@mui/material';
 import imglogo from '../assets/logo.jpg';
 import './signup.css'
 import Logo from "../assets/logo";
@@ -15,6 +15,7 @@ import FormControl from '@mui/material/FormControl';
 // import TextField from '@mui/material/TextField';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import styles from'./signup.module.css';
 
 
 
@@ -23,28 +24,28 @@ const Link_SignUp = () => {
     // const [showPassword, setShowPassword] = React.useState(false);
 
     // const handleClickShowPassword = () => setShowPassword((show) => !show);
-  
+
     // const handleMouseDownPassword = (event) => {
     //   event.preventDefault();
     // };
-  
+
     return (
-        <Box className="signup_root">
-            <Box className="signup_wraper">
-                <Box className="signup_logoimg">
+        <Box className={styles.signup_root}>
+            <Box className={styles.signup_wraper}>
+                <Box className={styles.signup_logoimg}>
                     <Logo color="#0A66C2" />
-                     {/* <img className="link_img" src={imglogo} height={"80px"} />  */}
+                    {/* <img className="link_img" src={imglogo} height={"80px"} />  */}
                 </Box>
-                <Box className="signup_title">Make the most of your professional life
-                    <Box className="signup_box">
-                        <Box className="inner_box1">
-                            <Box className="textfeild1">
-                                <FormLabel sx={{ textAlign: "left" }} className="text1">Email or Phone number</FormLabel>
-                                <InputBase className="signup_input1" fullWidth required></InputBase></Box>
-                             <Box className="textfeild2">
-                                <FormLabel className="text2">Password(6+Character)</FormLabel>
-                                <InputBase className="signup_input2" fullWidth required></InputBase> 
-                                {/* <Box className="inputindorment">  <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                <Box className={styles.signup_title}>Make the most of your professional life
+                    <Box className={style.signup_box}>
+                        <Box className={styles.inner_box1}>
+                            <Box className={styles.textfeild1}>
+                                <FormLabel sx={{ textAlign: "left" }} className={styles.text1}>Email or Phone number</FormLabel>
+                                <InputBase className={styles.signup_input1} fullWidth required></InputBase></Box>
+                            <Box className={styles.textfeild2}>
+                                <FormLabel className={styles.text2}>Password(6+Character)</FormLabel>
+                                <InputBase className={styles.signup_input2} fullWidth required></InputBase>
+                                <FormControl className={styles.login_input2} fullWidth required variant="outlined">
                                     <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
                                     <OutlinedInput
                                         id="outlined-adornment-password"
@@ -53,9 +54,9 @@ const Link_SignUp = () => {
                                             <InputAdornment position="end">
                                                 <IconButton
                                                     aria-label="toggle password visibility"
-                                                    onClick={handleClickShowPassword}
-                                                    onMouseDown={handleMouseDownPassword}
-                                                    edge="end"
+                                                // onClick={handleClickShowPassword}
+                                                // onMouseDown={handleMouseDownPassword}
+
                                                 >
                                                     {showPassword ? <VisibilityOff /> : <Visibility />}
                                                 </IconButton>
@@ -63,31 +64,30 @@ const Link_SignUp = () => {
                                         }
                                         label="Password"
                                     />
-                                </FormControl></Box> */}
-
+                                </FormControl>
                             </Box>
-                            
-                            <Typography className="signup_link">By clicking continue,you agree linkedin's
+
+                            <Typography className={Styles.signup_link}>By clicking continue,you agree linkedin's
                                 <Link href="#" >user Agreement,privacy policy</Link>and
                                 <Link href="#" >cokkie policy</Link>
                             </Typography>
-                            <Button className="signup_button" type="submit"
+                            <Button className={styles.signup_button} type="submit"
                                 fullWidth
                                 variant="contained">Agree & Join
                             </Button>
 
 
                         </Box>
-                        <Box className="innerbox2">
-                            <Box className="signup_divider" ><Divider>or</Divider></Box>
+                        <Box className={styles.innerbox2}>
+                            <Box className={styles.signup_divider} ><Divider>or</Divider></Box>
 
-                            <Button className="signup_google_btn" type="button"
+                            <Button className={styles.signup_google_btn} type="button"
                                 fullWidth>
 
-                                <img className="google_img" src="https://img.icons8.com/color/48/000000/google-logo.png" />Continue with Google
+                                <img className={styles.google_img} src="https://img.icons8.com/color/48/000000/google-logo.png" />Continue with Google
                             </Button>
-                            <Typography className="bottom_text">Already on linkedin?
-                                <Link className="bottom_text_link" href="#">   Sign In</Link>
+                            <Typography className={styles.bottom_text}>Already on linkedin?
+                                <Link className={styles.bottom_text_link} href="#">   Sign In</Link>
 
                             </Typography>
 
@@ -95,17 +95,17 @@ const Link_SignUp = () => {
 
                         </Box>
                     </Box>
-                <Box className="signup_footerwrap">
-                    <Typography className="footer_text">
-                        Looking to create a page for business?
-                        <Link className="footer_link" >Get help</Link>
-                    </Typography>
-                </Box>
+                    <Box className={styles.signup_footerwrap}>
+                        <Typography className={styles.footer_text}>
+                            Looking to create a page for business?
+                            <Link className={styles.footer_link} >Get help</Link>
+                        </Typography>
+                    </Box>
                 </Box>
             </Box>
-            </Box>
+        </Box>
 
-        
+
     )
 };
 export default Link_SignUp;
