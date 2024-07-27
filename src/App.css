@@ -1,0 +1,26 @@
+.MuiInputBase-root{
+    background-color: #fff  !important;
+    border: 1px solid black !important;
+    border-radius: 4px;
+}
+
+.MuiFilledInput-root::before,.MuiFilledInput-root::after{
+    border: none !important;
+}
+
+.MuiFormLabel-root.Mui-focused{
+    color:unset !important;
+}
+input.MuiInputBase-input{
+    /* padding: 0 !important; */
+    background-color: unset !important   ;
+    border: unset !important;
+    outline: unset !important;
+}
+input.MuiInputBase-input:focus{
+    border: none !important;
+    outline: none !important;
+} 
+.MuiTypography-root, .MuiButton-root{
+    font-family: unset !important;
+}

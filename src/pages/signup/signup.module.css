@@ -49,8 +49,6 @@
     color: #000000ec !important;
     font-size: 32px !important;
     font-weight: 400 !important;
-    height: 87px;
-    justify-content: center !important;
     padding: 24px 16px !important;
     position: relative !important;
     text-align: center !important;
@@ -61,20 +59,19 @@
 .signup_box {
     background-color: #fff !important;
     border-radius: 8px;
-    height: auto;
-    margin: 30px auto !important;
+    height: auto !important;
+    margin: 0 auto !important;
     padding: 24px 24px 0;
     width: 400px;
     box-sizing: inherit;
-    max-width: 352px;
-    max-height: 460px;
+    
 }
 
 .inner_box1 {
     display: inline-flex;
     flex-direction: column;
     position: relative;
-    min-width: 0px;
+    width: 100%;
     padding: 0px;
     margin: 0px;
     border: 0px;
@@ -83,8 +80,7 @@
 
 
 .textfeild1 {
-    margin-bottom: 16px !important;
-    margin-top: 16px !important;
+    margin-bottom: 0 !important;
     display: inline-flex;
     flex-direction: column;
     position: relative;
@@ -96,15 +92,20 @@
 }
 
 .text1 {
-    color: gray !important;
+   
     font-size: 14px !important;
     font-weight: 600 !important;
+    margin: 0 0 4px;
     text-align: left !important;
    
 }
 
 .signup_input1 {
-    display: inline-flex;
+    height: 33px;
+    margin: 0 auto !important;
+    max-width: 352px !important;
+    padding: 0 15px 0 15px !important;}
+    /* display: inline-flex;
     flex-direction: column;
     position: relative;
     min-width: 0px;
@@ -114,7 +115,8 @@
     border: 1px solid black;
     border-radius: 4px;
     vertical-align: top;
-}
+    text-indent: 50px !important;
+} */
 .textfeild2{
     display: inline-flex;
     flex-direction: column;
@@ -128,7 +130,8 @@
 }
 
 .text2 {
-    color: grey !important;
+  
+   
     font-size: 14px !important;
     font-weight: 600 !important;
     margin: 16px 0 4px;
@@ -138,10 +141,9 @@
 
 .signup_input2 {
     display: inline-flex;
-    flex-direction: column;
     position: relative;
     min-width: 0px;
-    padding: 0px;
+    padding: 0 15px 0 15px;
     height: 33px;
     margin: 0px;
     border: 1px solid black;
@@ -162,6 +164,8 @@
     height: 40px !important; 
     margin-top: 16px !important;
     padding: 20px 0 !important;
+    text-transform: none !important;
+    font-size: 16px !important;
 
 }
 
@@ -173,10 +177,10 @@
 
 
 .signup_divider {
+   
     color: gray;
-    margin: 22px 0 !important;
-    height: 50px !important;
-    font-size: 20px;
+    font-size: 15px;
+    margin: 22px 0px !important;
 }
 
 .signup_google_btn {
@@ -184,12 +188,11 @@
     border: 1px solid #000 !important;
     box-shadow: none !important;
     color: #3c4043 !important;
-    font-family: Google Sans, arial, sans-serif !important;
-    font-size: 16px !important;
+    font-family: Google Sans, ar fial, sans-serif !important;
     border-radius: 50px !important;
-    height: 40px !important;
+    height: auto !important;
     margin-bottom: 15px !important;
-    margin-top: -2px !important;
+   
     padding: 6px 16px !important;
     text-transform: none !important;
     width: 100% !important;
@@ -203,10 +206,13 @@
 
 .bottom_text {
     color: #000000e6 !important;
-     font-weight: 100 !important;
-    height: 20px;
+    font-size: 16px !important;
+    font-weight: 400 !important;
     justify-content: center !important;
-    padding: 16px 16px 24px !important; 
+    line-height: 24px !important;
+    padding: 16px 16px 24px !important;
+    position: relative !important;
+    text-align: center !important;
    
 }
 
@@ -217,11 +223,8 @@
 }
 .footer_text{
     font-size: 14px !important;
-    /* margin-top: 50% !important; */
+    margin-top: 16px !important;
     text-align: center !important;
-    /* max-width: 1100px; */
-    height: 21px;
-    text-transform: none;
 }
 /* .inputindorment{
     display: flex;
@@ -233,5 +236,37 @@
     color: rgba(0, 0, 0, 0.54);
 } */
 .footer_link{
+    text-decoration: none !important;
+   }
+.footer_wrap {
+    display: flex !important;
+    height: auto !important;
+    min-height: 50px !important;
+    position: absolute !important;
+    justify-content: center;
+    bottom: 0;
+    width: 100% !important;
+    background-color: white;
+}
+
+.footer {
+    /* align-items: center !important; */
+    display: flex !important;
+    /* justify-content: center !important; */
+    padding: 0 !important;
+    margin: auto !important;
+}
+.footer_img{
+    height: 16px !important;
+    margin-right: 3px !important;
+    width: 60px !important;
+    margin-top: 3px;
+}
+.footer_text1{
+    color: #0009 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.5rem !important;
+    margin: 0 6px !important;
     text-decoration: none !important;
 }

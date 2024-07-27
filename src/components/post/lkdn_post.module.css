@@ -1,0 +1,32 @@
+.root_box{
+    background-color: #ebce95;
+    height: 100vh;
+    width: 100vw;
+   box-sizing: inherit !important;
+}
+.main_box{
+    background-color: #ebce95;
+    height: 100vh;
+    width: 100vw;
+}
+.postHead{
+    /* left: 50%;
+    right: 50%;
+    transform: translate(50%-50%); */
+    
+
+}
+.MuiCardHeader-content{
+    display: none !important;
+}
+.img{
+    /* right: 140%; */
+}
+.cridentials{
+  text-align: left;
+}
+.text1{
+    display: flex;
+    justify-content: left;
+    
+}

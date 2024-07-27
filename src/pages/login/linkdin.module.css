@@ -8,11 +8,12 @@
     display: block;
     height: auto;
     margin-top: 40px;
-    margin-left:56px ;
+    margin-left: 56px;
     min-height: 66px;
     width: 110px;
 }
-.logo_svg{
+
+.logo_svg {
     float: left;
     height: 28px;
     margin-left: 56px;
@@ -42,8 +43,8 @@
     box-shadow: 0 4px 12px #00000026;
     border-radius: 8px;
     padding: 14px 24px;
-    margin-bottom: 80px;
-    
+    margin-bottom: 32px;
+
 }
 
 
@@ -65,11 +66,10 @@
     font-size: 14px !important;
     font-weight: 400 !important;
     margin-top: 6px !important;
-    height: 40px;
+  
 }
 
-.login_input1 {
-    background-color: white;
+/* .login_input1 {
     height: 100px;
     width: 20px;
     display: inline-flex;
@@ -80,8 +80,33 @@
     border-radius: 8px;
 }
 
+.login_input1>div {
+    background-color: unset !important;
+}
+
+.login_input1>div>fieldset {
+    border-color: rgba(0, 0, 0, 0.8);
+} */
+
+.login_input1{
+    margin: 0 auto !important;
+    margin-top: 22px !important;
+    width: 100% !important;
+    border-radius: 4px !important;
+    font-size: 28px ;
+    background-color: unset !important;
+    box-sizing: border-box !important;
+    & div>input{
+        padding: 25px 12px 8px 12px !important;
+        width: 100% !important;
+    }
+}
+.login_input1>div>fieldset{
+    border-color:rgba(0, 0, 0, 0.8) ;
+}
+
 .login_input2 {
-   
+
     height: 80px;
     position: relative;
     width: 100% !important;
@@ -96,30 +121,30 @@
     border-style: solid !important;
     border-color: rgba(0, 0, 0, 0) !important;
     border-image: initial !important;
-    text-decoration: none;
-    margin-top: 50px !important;
+    text-decoration: none !important;
+    padding: 6px 0 !important;
 }
 
 
 .login_button {
     background-color: rgb(10, 102, 194) !important;
     color: rgb(255, 255, 255) !important;
-    margin-top: 16px !important;
     padding: 10px 0px !important;
     border-radius: 24px !important;
+    text-transform: none !important;
 }
+
 .login_divider {
     color: gray;
-    margin: 22px 0 !important;
-    height: 0px !important;
+    margin: 11px 0 !important;
     font-size: 20px;
 }
 
 
 .login_link2 {
-    padding: 20px 10px;
-    color:rgba(0, 0, 0, 0.89) !important;
-    font-size: 15px !important;
+    padding: 0 10px 20px 10px;
+    color: rgba(0, 0, 0, 0.89) !important;
+    font-size: 12px !important;
     margin-top: 2px !important;
     text-align: left !important;
     text-decoration: none;
@@ -135,14 +160,15 @@
     width: 90px;
     height: 50px;
     display: flex;
+    text-transform: none !important;
 }
 
 .google_img {
-    height: 15px;
-    width: 22px;
+    height: 24px;
+    /* width: 22px; */
     margin: 10px;
     display: flex;
-    height: 30px;
+    /* height: 30px; */
 }
 
 .login_apple_btn {
@@ -154,6 +180,7 @@
     height: 50px;
     display: flex;
     color: gray !important;
+    text-transform: none !important;
 }
 
 .login_time_link {
@@ -165,11 +192,12 @@
     width: 90px;
     height: 50px;
     display: flex;
+    text-transform: none !important;
 }
 
-.login_footer_root{
-    
-color: rgba(0, 0, 0, 0.9) !important;
+.login_footer_root {
+
+    color: rgba(0, 0, 0, 0.9) !important;
     display: flex !important;
     font-size: 16px !important;
     font-weight: 400 !important;
@@ -180,22 +208,40 @@ color: rgba(0, 0, 0, 0.9) !important;
     position: relative !important;
     text-align: center !important;
 }
-.footer_link{
-    text-decoration: none;
+
+.footer_link {
+    text-decoration: none !important;
 }
-.footer_wrap{
+
+.footer_wrap {
     display: flex !important;
     height: auto !important;
-    min-height: 72px !important;
+    min-height: 50px !important;
     position: absolute !important;
-    text-align: center !important;
-    top: 93% !important;
+   justify-content: center;
+   bottom: 0;
     vertical-align: initial !important;
     width: 100% !important;
 }
-.footer{
+
+.footer {
     align-items: center !important;
     display: flex !important;
     justify-content: center !important;
     padding: 0 !important;
+    margin: 24px 0px !important;
+}
+.footer_img{
+    height: 16px !important;
+    margin-right: 3px !important;
+    width: 60px !important;
+    margin-top: 3px;
+}
+.footer_text1{
+    color: #0009 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.5rem !important;
+    margin: 0 6px !important;
+    text-decoration: none !important;
 }
