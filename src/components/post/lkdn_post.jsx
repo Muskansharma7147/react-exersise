@@ -10,8 +10,10 @@ import image from '../../assets/image.jpg';
 import avatr from '../../assets/avatar.jpg';
 import Divider from '@mui/material/Divider';
 import CardActions from '@mui/material/CardActions';
-import like from '../../assets/like.jpg';
-// import coment from ''
+import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
+import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
+import repost from '../../assets/repost.svg';
+
 
 const Lkdn_Post = () => {
   return (
@@ -33,7 +35,7 @@ const Lkdn_Post = () => {
                   <Typography className={styles.text2}>role</Typography>
                   <Typography className={styles.text3}>duration</Typography>
                 </Box>
-                <Button className={styles.follow}><AddIcon></AddIcon>Follow</Button>
+                <Button className={styles.follow}><AddIcon className={styles.addicon}></AddIcon>Follow</Button>
               </Box>
             }
           />
@@ -42,7 +44,7 @@ const Lkdn_Post = () => {
           <CardMedia className={styles.image}
             component="img"
             height="500"
-            width="120"
+            width="300"
             image={image}
             alt="image"
 
@@ -54,14 +56,23 @@ const Lkdn_Post = () => {
 
 
           <CardActions>
-            <Box className={styles.icon}>
-              <ButtonGroup className={styles.postbuttongroup} variant="text" aria-label="Basic button group">
-                <Button image={like}>Like</Button>
-                <Button>Comment</Button>
-                <Button>Repost</Button>
-                <Button>share</Button>
+            
+              <ButtonGroup  sx={{
+              '& .MuiButtonGroup-grouped': {
+                border: "unset !important",
+                color:"grey"
+              }
+                
+
+            }}
+
+              className={styles.postbuttongroup} variant="text" aria-label="Basic button group" >
+                <Button  className={styles.buttn1} ><ThumbUpOutlinedIcon/>Like</Button>
+                <Button className={styles.buttn2}><CommentOutlinedIcon/> Comment</Button>
+                <Button className={styles.buttn3} >  Repost</Button>
+                <Button className={styles.buttn4}>share</Button>
               </ButtonGroup>
-            </Box>
+           
 
           </CardActions>
 

@@ -25,6 +25,7 @@
     object-fit: cover;
     color: transparent;
     text-indent: 10000px;
+    margin-right: auto;
 }
 
 .header{
@@ -60,6 +61,10 @@
     line-height: 30px !important;
     text-align: left !important;
 }
+.addicon{
+    height: 24px !important;
+    width:24px !important
+}
 .follow{
     color: #0a66c2 !important;
     /* font-size: 16px !important; */
@@ -71,17 +76,22 @@
    
 }
 .postbuttongroup{
-    border: none !important;
-    border-radius: 6px !important;
-    color: #0009 !important;
-    display: inline-flex !important;
-    flex-wrap: wrap !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    justify-content: center !important;
-    line-height: 28px !important;
-    min-height: 48px !important;
-    overflow: hidden !important;
+   
     text-transform: none !important;
-    vertical-align: middle !important;
+    border: unset !important;
+    color: #000;
+
+
+}
+.button1{
+    text-transform: none !important;
+    border: unset !important;
+
+}
+.MuiButtonGroup-firstButton{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    text-transform: none !important;
+    border: unset !important;
+    color: #000;
 }
