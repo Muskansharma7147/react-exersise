@@ -9,24 +9,79 @@
     height: 100vh;
     width: 100vw;
 }
-.postHead{
+/* .postHead{
     /* left: 50%;
     right: 50%;
     transform: translate(50%-50%); */
     
 
-}
+
 .MuiCardHeader-content{
     display: none !important;
 }
 .img{
-    /* right: 140%; */
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+    color: transparent;
+    text-indent: 10000px;
 }
-.cridentials{
-  text-align: left;
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 65% !important;
+
 }
 .text1{
-    display: flex;
-    justify-content: left;
+    color: #000 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
     
+}
+.text2{
+    max-height: 18px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    width: 100% !important;
+}
+.text3{
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+.posttitle{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 30px !important;
+    text-align: left !important;
+}
+.follow{
+    color: #0a66c2 !important;
+    /* font-size: 16px !important; */
+    font-weight: 600 !important;
+    line-height: 20px !important;
+    position: absolute !important;
+    right: 68% !important;
+    text-transform: none !important;
+   
+}
+.postbuttongroup{
+    border: none !important;
+    border-radius: 6px !important;
+    color: #0009 !important;
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    justify-content: center !important;
+    line-height: 28px !important;
+    min-height: 48px !important;
+    overflow: hidden !important;
+    text-transform: none !important;
+    vertical-align: middle !important;
 }

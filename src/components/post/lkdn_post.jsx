@@ -28,16 +28,16 @@ const Lkdn_Post = () => {
             action={
               <Box sx={{ display:"flex"}} >
                 <Avatar className={styles.img} image={avatr} />
-                <Box className={styles.cridentials}>
-                  <Typography className={styles.text1}>linkedin username</Typography>
-                  <Typography>role</Typography>
-                  <Typography>duration</Typography>
+                <Box className={styles.header}>
+                  <Typography className={styles.text1}>lnkd_username</Typography>
+                  <Typography className={styles.text2}>role</Typography>
+                  <Typography className={styles.text3}>duration</Typography>
                 </Box>
-                <Button><AddIcon></AddIcon>Follow</Button>
+                <Button className={styles.follow}><AddIcon></AddIcon>Follow</Button>
               </Box>
             }
           />
-          my post
+          <Typography className={styles.posttitle}> My Post</Typography>
 
           <CardMedia className={styles.image}
             component="img"
@@ -47,11 +47,15 @@ const Lkdn_Post = () => {
             alt="image"
 
           />
+           
+
           <br />
-          <Divider></Divider>
+          <Divider variant="middle"></Divider>
+
+
           <CardActions>
             <Box className={styles.icon}>
-              <ButtonGroup variant="text" aria-label="Basic button group">
+              <ButtonGroup className={styles.postbuttongroup} variant="text" aria-label="Basic button group">
                 <Button image={like}>Like</Button>
                 <Button>Comment</Button>
                 <Button>Repost</Button>
