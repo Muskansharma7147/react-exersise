@@ -20,11 +20,9 @@
     display: none !important;
 }
 .img{
-    height: 100%;
+
     text-align: center;
-    object-fit: cover;
     color: transparent;
-    text-indent: 10000px;
     margin-right: auto;
 }
 
@@ -33,6 +31,12 @@
     flex-direction: column;
     justify-content: left;
     width: 65% !important;
+
+}
+.timer{
+    height: 50px;
+    font-size: small;
+    
 
 }
 .text1{

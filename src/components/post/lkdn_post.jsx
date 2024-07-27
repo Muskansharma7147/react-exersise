@@ -7,12 +7,12 @@ import { Avatar, Box, Button, Typography, ButtonGroup } from '@mui/material';
 import styles from './lkdn_post.module.css';
 import AddIcon from '@mui/icons-material/Add';
 import image from '../../assets/image.jpg';
-import avatr from '../../assets/avatar.jpg';
 import Divider from '@mui/material/Divider';
 import CardActions from '@mui/material/CardActions';
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
 import repost from '../../assets/repost.svg';
+import AccessTimeFilledOutlinedIcon from '@mui/icons-material/AccessTimeFilledOutlined';
 
 
 const Lkdn_Post = () => {
@@ -29,11 +29,14 @@ const Lkdn_Post = () => {
 
             action={
               <Box sx={{ display:"flex"}} >
-                <Avatar className={styles.img} image={avatr} />
+                <Avatar className={styles.img} alt="image" src="C:\Users\Dell\fed\react-exersise\src\assets\avatar.jpg" />
                 <Box className={styles.header}>
                   <Typography className={styles.text1}>lnkd_username</Typography>
                   <Typography className={styles.text2}>role</Typography>
-                  <Typography className={styles.text3}>duration</Typography>
+                  <Typography className={styles.text3}>duration  .<AccessTimeFilledOutlinedIcon sx={{
+              '& .MuiSvgIcon-root': {fontSize:"unset"}
+
+            }} className={styles.timer}/></Typography>
                 </Box>
                 <Button className={styles.follow}><AddIcon className={styles.addicon}></AddIcon>Follow</Button>
               </Box>
